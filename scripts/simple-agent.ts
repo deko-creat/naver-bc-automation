@@ -336,7 +336,7 @@ async function generateWithAI(systemPrompt: string, userPrompt: string): Promise
   if (AI_PROVIDER === "gemini" && gemini) {
     // Gemini 사용
     const model = gemini.getGenerativeModel({ 
-      model: "gemini-2.5-flash-preview-05-20",
+      model: "gemini-2.5-flash",
       generationConfig: {
         temperature: 0.75,
         maxOutputTokens: 4000,
